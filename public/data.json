@@ -1,0 +1,111 @@
+[
+    {
+      "image": "https://i.ibb.co/gryN0xd/Penthouse-min.jpg",
+      "estate_title": "Luxurious Penthouse with Stunning City Views",
+      "id": 1,
+      "segment_name": "Penthouse",
+      "description": "Indulge in the epitome of urban luxury living with this exquisite penthouse, offering panoramic vistas of the city skyline that stretch as far as the eye can see. Perched atop a prestigious high-rise, this residence boasts unparalleled sophistication and style. Step inside to discover a world of opulence, where every detail has been meticulously curated to cater to the most discerning tastes. From the grand foyer adorned with imported marble flooring to the expansive living areas bathed in natural light, every aspect of this penthouse exudes elegance and refinement. Entertain guests in the spacious living room with its soaring ceilings and stunning views, or retreat to the private sanctuary of the master suite, complete with a spa-like ensuite bath and custom walk-in closet. The gourmet kitchen is a chef's delight, featuring top-of-the-line appliances, sleek cabinetry, and a large island perfect for culinary creations. Outside, the expansive terrace beckons for al fresco dining and relaxation, offering a serene oasis amidst the bustling city below. With unrivaled amenities and a prime location in the heart of downtown, this penthouse is truly a rare find.",
+      "price": "$5,000,000",
+      "status": "Sale",
+      "area": "3,500 sq ft",
+      "location": "Downtown Metropolis",
+      "facilities": ["Spacious living room", "Infinity pool", "Gourmet kitchen"]
+    },
+    {
+      "image": "https://i.ibb.co/qr7bnvj/Secluded-Beachfront-Retreat-min.jpg",
+      "estate_title": "Secluded Beachfront Retreat",
+      "id": 2,
+      "segment_name": "Beachfront properties",
+      "description": "Escape to paradise with this exclusive beachfront property offering pristine sands and azure waters. Perfect for those seeking ultimate relaxation and luxury, this secluded retreat boasts unparalleled privacy and breathtaking ocean views. Nestled along the shores of a secluded tropical island, this beachfront oasis is a haven of tranquility and serenity. Step outside to feel the soft sand beneath your feet and listen to the gentle lapping of the waves against the shore, or take a refreshing dip in the crystal-clear waters of your private infinity pool. The expansive outdoor living areas are perfect for entertaining, with ample space for lounging, dining, and soaking up the sun. Inside, the villa is a masterpiece of design and craftsmanship, with luxurious finishes and bespoke furnishings throughout. The spacious bedrooms offer peaceful havens for rest and relaxation, while the gourmet kitchen is a chef's delight, equipped with top-of-the-line appliances and sleek cabinetry. With world-class amenities and a prime location in one of the most sought-after destinations, this beachfront retreat is truly a slice of paradise.",
+      "price": "$8,500,000",
+      "status": "Sale",
+      "area": "6 acres",
+      "location": "Tropical Island Haven",
+      "facilities": ["Private beach access", "Spa facilities", "Outdoor kitchen"]
+    },
+    {
+      "image": "https://i.ibb.co/FJHYQXP/Luxury-Resort-and-Spa-min.jpg",
+      "estate_title": "Luxury Resort and Spa",
+      "id": 3,
+      "segment_name": "Resorts",
+      "description": "Indulge in unparalleled luxury and pampering at this world-class resort and spa, where every detail has been carefully considered to ensure an unforgettable experience. Nestled amidst lush tropical foliage and pristine beaches, this luxurious retreat offers the perfect blend of natural beauty and opulent amenities. Whether you're seeking relaxation, adventure, or simply a change of scenery, this resort has something for everyone. Spend your days lounging by one of the multiple pools, sipping cocktails at the beachfront bar, or rejuvenating your body and mind at the spa. For the more adventurous, a variety of water sports and outdoor activities are available, ensuring endless opportunities for fun and excitement. When it's time to dine, indulge in world-class cuisine at one of the resort's five-star restaurants, where expert chefs prepare delectable dishes using the freshest local ingredients. At the end of the day, retreat to your luxurious accommodations, where every comfort has been thoughtfully provided, ensuring a restful night's sleep. With impeccable service and a stunning natural setting, this resort is truly a tropical paradise.",
+      "price": "$12,000,000",
+      "status": "Sale",
+      "area": "10 acres",
+      "location": "Exotic Rainforest Retreat",
+      "facilities": ["Multiple pools", "Five-star dining", "Tennis courts"]
+    },
+    {
+      "image": "https://i.ibb.co/0CMpB4W/Exclusive-Private-Island-Oasis-min.jpg",
+      "estate_title": "Exclusive Private Island Oasis",
+      "id": 4,
+      "segment_name": "Private Islands",
+      "description": "Escape the ordinary and experience the extraordinary with your own private island sanctuary, where luxury knows no bounds and privacy is paramount. Situated in a remote corner of the world, this exclusive retreat offers the ultimate in seclusion and tranquility, surrounded by pristine beaches and crystal-clear waters. Step ashore to discover a paradise unlike any other, where lush tropical foliage and swaying palms create a picturesque backdrop for your adventures. The centerpiece of the island is a luxurious villa, meticulously designed to blend seamlessly with its natural surroundings while offering all the comforts of modern living. Inside, spacious living areas are adorned with elegant furnishings and bespoke finishes, creating a warm and inviting atmosphere that feels like home. Outside, the expansive grounds beckon for exploration, with winding paths leading to secluded beaches, hidden coves, and panoramic lookout points. Whether you're relaxing by the infinity pool, enjoying a gourmet meal prepared by your private chef, or embarking on an underwater adventure in the surrounding coral reefs, every moment spent on this private island is sure to be unforgettable. With unmatched beauty and unparalleled luxury, this is truly a once-in-a-lifetime opportunity to own your own piece of paradise.",
+      "price": "$25,000,000",
+      "status": "Sale",
+      "area": "50 acres",
+      "location": "Remote Island Paradise",
+      "facilities": ["Luxury villa", "Helipad", "Marina"]
+    },
+    {
+      "image": "https://i.ibb.co/ZhwZskt/Majestic-Mediterranean-Villa-min.jpg",
+      "estate_title": "Majestic Mediterranean Villa",
+      "id": 5,
+      "segment_name": "Villas",
+      "description": "Step into a world of timeless elegance and luxury with this majestic Mediterranean villa, nestled amidst the rolling hills of the Spanish countryside. Designed to evoke the grandeur of a bygone era, this exquisite estate boasts stunning architectural details, lush landscaped gardens, and panoramic views of the surrounding landscape. From the moment you arrive, you'll be captivated by the villa's Old World charm and modern amenities, from the grand entrance hall with its sweeping staircase to the spacious living areas adorned with marble floors and vaulted ceilings. Entertain guests in the formal dining room, complete with a fireplace and French doors that open onto a terrace overlooking the grounds, or relax in the cozy library with a book from the built-in shelves. Outside, the expansive grounds offer endless opportunities for outdoor living, with multiple terraces, a swimming pool, and a tennis court. With its serene setting and luxurious amenities, this Mediterranean villa is the epitome of refined living.",
+      "price": "$7,200",
+      "status": "Rent",
+      "area": "8,000 sq ft",
+      "location": "Costa del Sol, Spain",
+      "facilities": ["Expansive terrace", "Private cinema", "Wine cellar"]
+    },
+    {
+      "image": "https://i.ibb.co/mDWKDxr/Opulent-Historic-Mansion-min.jpg",
+      "estate_title": "Opulent Historic Mansion",
+      "id": 6,
+      "segment_name": "Mansions",
+      "description": "Enter a world of timeless elegance and grandeur with this opulent historic mansion, nestled amidst the picturesque countryside. Steeped in history and meticulously restored to its former glory, this magnificent estate offers a rare opportunity to own a piece of architectural heritage. From the moment you pass through the grand wrought-iron gates and follow the sweeping driveway to the main entrance, you'll be captivated by the mansion's stately presence and exquisite craftsmanship. Step inside to discover a treasure trove of period features and luxurious amenities, from the soaring ceilings and ornate moldings to the marble fireplaces and crystal chandeliers. The grand reception rooms are perfect for entertaining on a grand scale, while the numerous bedrooms and private suites offer ample space for family and guests. Outside, the manicured gardens and grounds provide a peaceful retreat from the hustle and bustle of everyday life, with rolling lawns, mature trees, and meandering pathways to explore. With its rich history and unparalleled beauty, this historic mansion is truly a once-in-a-lifetime opportunity.",
+      "price": "$15,500,000",
+      "status": "Sale",
+      "area": "15,000 sq ft",
+      "location": "Stately Countryside Estate",
+      "facilities": ["Formal gardens", "Ballroom", "Library"]
+    },
+    {
+      "image": "https://i.ibb.co/2tjVzCp/Modern-Penthouse-Oasis-min.jpg",
+      "estate_title": "Modern Penthouse Oasis",
+      "id": 7,
+      "segment_name": "Penthouse",
+      "description": "Experience the height of urban sophistication with this modern penthouse oasis, where sleek design meets panoramic city views. Perched atop a prestigious high-rise, this luxurious residence offers the perfect blend of style, comfort, and convenience. Step inside to discover a world of contemporary elegance, with open-concept living spaces bathed in natural light and accented by designer finishes and fixtures. The expansive floor-to-ceiling windows offer sweeping vistas of the city skyline, creating a stunning backdrop for entertaining or simply relaxing in style. The chef's kitchen is a culinary masterpiece, featuring top-of-the-line appliances, custom cabinetry, and a large island with seating for casual dining. Retreat to the master suite, where floor-to-ceiling windows offer breathtaking views and a spa-like ensuite bath provides a luxurious escape from the stresses of everyday life. Outside, the private rooftop terrace is the perfect spot for al fresco dining or enjoying cocktails with friends while taking in the glittering lights of the city below. With its prime location and unparalleled amenities, this modern penthouse is urban living at its finest.",
+      "price": "$4,200",
+      "status": "Rent",
+      "area": "2,800 sq ft",
+      "location": "Metropolitan Skylines",
+      "facilities": ["Open-concept layout", "Rooftop terrace", "Home automation system"]
+    },
+    {
+      "image": "https://i.ibb.co/gV4TZ99/Luxury-Beachfront-Villa-min.jpg",
+      "estate_title": "Luxury Beachfront Villa",
+      "id": 8,
+      "segment_name": "Beachfront properties",
+      "description": "Experience the ultimate in coastal luxury with this stunning beachfront villa, where every detail has been carefully crafted to ensure an unforgettable experience. Located in one of the most coveted beachfront communities, this exquisite residence offers unparalleled views of the azure waters and white sand beaches that stretch as far as the eye can see. Step inside to discover a world of elegance and sophistication, with spacious living areas adorned with designer furnishings and bespoke finishes. The gourmet kitchen is a chef's dream, featuring top-of-the-line appliances, custom cabinetry, and a large island with seating for casual dining. The luxurious master suite is a private sanctuary, complete with a spa-like ensuite bath and breathtaking views of the ocean. Outside, the expansive terrace is the perfect spot for entertaining, with a heated infinity pool, outdoor kitchen, and plenty of space for lounging in the sun. With its prime location and world-class amenities, this beachfront villa is the epitome of coastal living.",
+      "price": "$6,800,000",
+      "status": "Sale",
+      "area": "4,500 sq ft",
+      "location": "Seaside Haven",
+      "facilities": ["Private beach access", "Infinity pool", "Outdoor dining area"]
+    },
+    {
+      "image": "https://i.ibb.co/LvYWyCC/Luxurious-Villa-in-Tuscan-Countryside-min.jpg",
+      "estate_title": "Luxurious Villa in Tuscan Countryside",
+      "id": 9,
+      "segment_name": "Villas",
+      "description": "Escape to the idyllic beauty of the Tuscan countryside with this luxurious villa, where timeless elegance meets modern comfort. Surrounded by rolling hills, vineyards, and olive groves, this exquisite estate offers a tranquil retreat from the hustle and bustle of everyday life. Step inside to discover a world of refined living, with spacious living areas adorned with elegant furnishings and bespoke finishes. The gourmet kitchen is a chef's delight, featuring top-of-the-line appliances, custom cabinetry, and a large island with seating for casual dining. The luxurious master suite offers a peaceful sanctuary, with a spa-like ensuite bath and breathtaking views of the surrounding landscape. Outside, the expansive grounds are perfect for outdoor entertaining, with multiple terraces, a swimming pool, and a pool house with a bar and lounge area. With its serene setting and luxurious amenities, this Tuscan villa is the perfect blend of old-world charm and modern luxury.",
+      "price": "$9,900,000",
+      "status": "Sale",
+      "area": "12,000 sq ft",
+      "location": "Tuscany, Italy",
+      "facilities": ["Italianate gardens", "Pool house", "Outdoor pizza oven"]
+    }
+  ]
+  
