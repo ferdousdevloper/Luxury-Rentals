@@ -1,0 +1,66 @@
+.slide{
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+}
+
+.slide1{
+    background-image: url('https://i.ibb.co/gryN0xd/Penthouse-min.jpg');
+}
+.slide2{
+    background-image: url('https://i.ibb.co/qr7bnvj/Secluded-Beachfront-Retreat-min.jpg');
+}
+.slide3{
+    background-image: url('https://i.ibb.co/FJHYQXP/Luxury-Resort-and-Spa-min.jpg');
+}
+.slide4{
+    background-image: url('https://i.ibb.co/0CMpB4W/Exclusive-Private-Island-Oasis-min.jpg');
+}
+.slide5{
+    background-image: url('https://i.ibb.co/ZhwZskt/Majestic-Mediterranean-Villa-min.jpg');
+}
+.slide6{
+    background-image: url('https://i.ibb.co/mDWKDxr/Opulent-Historic-Mansion-min.jpg');
+}
+.slide7{
+    background-image: url('https://i.ibb.co/2tjVzCp/Modern-Penthouse-Oasis-min.jpg');
+}
+.slide8{
+    background-image: url('https://i.ibb.co/gV4TZ99/Luxury-Beachfront-Villa-min.jpg');
+}
+.slide9{
+    background-image: url('https://i.ibb.co/LvYWyCC/Luxurious-Villa-in-Tuscan-Countryside-min.jpg');
+}
+
+
+ 
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    filter: brightness(60%);
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

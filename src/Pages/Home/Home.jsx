@@ -1,6 +1,7 @@
 
 import { useContext } from 'react';
 import { ApiContext } from './../../ContextApiData/ContextApiData';
+import Banner from './../../components/Banner/Banner';
 
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
 
     return (
         <div>
-            
+            <Banner></Banner>
         </div>
     );
 };
