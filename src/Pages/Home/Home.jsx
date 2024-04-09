@@ -4,6 +4,7 @@ import { ApiContext } from './../../ContextApiData/ContextApiData';
 import Banner from './../../components/Banner/Banner';
 import OurServices from '../../components/OurServices/OurServices';
 import Cards from '../../components/Cards/Cards';
+import Reviews from '../../components/Reviews/Reviews';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner></Banner>
             <OurServices></OurServices>
             <Cards></Cards>
+            <Reviews></Reviews>
 
         </div>
     );

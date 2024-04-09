@@ -12,6 +12,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Login/Register";
 import FirebaseAuthProvider from "./FirebaseAuthProvider/FirebaseAuthProvider";
 import ContextApiData from "./ContextApiData/ContextApiData";
+import ViewProperty from "./components/ViewProperty/ViewProperty";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path:"/property/:id",
+        element: <ViewProperty></ViewProperty>,
       },
     ],
   },

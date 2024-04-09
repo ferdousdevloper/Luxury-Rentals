@@ -97,12 +97,12 @@ const NavBar = () => {
               {navLink}
             </ul>
           </div>
-          <div className="flex flex-col md:flex-row justify-center text-center md:justify-start md:text-left items-center md:gap-6">
+          <Link to='/' className="flex flex-col md:flex-row justify-center text-center md:justify-start md:text-left items-center md:gap-6">
             <img className="max-w-20" src={logo} alt="" />
             <h2 className="font-gilda text-2xl tracking-[6px] font-semibold text-yellow-600">
               Luxury Rentals
             </h2>
-          </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
@@ -139,7 +139,7 @@ const NavBar = () => {
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl text-white px-8">
+              <button className="btn bg-neutral-800 bg-opacity-50 backdrop-filter backdrop-blur-sm rounded-xl text-white px-8">
                 Login
               </button>
             </Link>

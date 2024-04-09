@@ -4,7 +4,7 @@ import { LiaHandHoldingUsdSolid } from "react-icons/lia";
 
 const OurServices = () => {
   return (
-    <div className=" pt-12 bg-slate-100">
+    <div className=" pt-12  ">
       <div className="text-center px-8">
         <h1 className="text-4xl text-gray-950 font-extrabold my-6">
           Our Services
@@ -15,25 +15,25 @@ const OurServices = () => {
         </p>
       </div>
       <div className="md:container py-6 mx-8 md:mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
-        <div className="card bg-white md:w-96 text-slate-950">
+        <div className="card bg-white border border-yellow-500 md:w-96 text-slate-950">
           <div className="card-body items-center text-center">
-          <FaHandHoldingUsd className="card-title text-6xl" />
+          <FaHandHoldingUsd className="card-title text-6xl text-green-500" />
             <h2 className="card-title">Property Insurance</h2>
             <p>Property insurance provides protection against most risk to property, such as fire theft...</p>
             
           </div>
         </div>
-        <div className="card bg-white md:w-96 text-slate-950">
+        <div className="card border border-yellow-500 bg-white md:w-96 text-slate-950">
           <div className="card-body items-center text-center">
-          <RiMoneyDollarCircleLine className="card-title text-6xl" />
+          <RiMoneyDollarCircleLine className="card-title text-6xl text-blue-500" />
             <h2 className="card-title">Advantage</h2>
             <p>All these properties have amazing prices, and you will find thousands of properties to choose from.</p>
             
           </div>
         </div>
-        <div className="card bg-white md:w-96 text-slate-950">
+        <div className="card border border-yellow-500 bg-white md:w-96 text-slate-950">
           <div className="card-body items-center text-center">
-          <LiaHandHoldingUsdSolid className="card-title text-6xl" />
+          <LiaHandHoldingUsdSolid className="card-title text-6xl text-yellow-500" />
             <h2 className="card-title">Low commission</h2>
             <p>We offer competitive commission structure that are straightforward and fair, making it simple and affordable.</p>
             

@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hook/useAuth";
 import SocialLogin from "./SocialLogin";
+import { useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
+
+  const [registerError, setRegisterError] = useState("");
+  const [registerSuccess, setRegisterSuccess] = useState("");
   const { signInUser } = useAuth();
 
 
@@ -17,18 +22,25 @@ const Login = () => {
 
     signInUser(email, password)
     .then(result =>{
-        console.log(result.user);
+      console.log(result.user);
+      setRegisterSuccess('Logged in successfully');
+      toast.success(registerSuccess)
+      
     })
     .catch(error =>{
-        console.log(error);
+      setRegisterError(error.message);
+      toast.error(registerError)
     })
+
+    
+    
     
   }
   
 
   return (
-    <div className="md:w-4/6 mx-auto">
-      <div className="hero min-h-screen">
+    <div className="md:w-4/6 mx-auto ">
+      <div className="hero min-h-screen pt-40 md:pt-20">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center">
             <h1 className="text-5xl font-bold">Login now!</h1>
@@ -64,12 +76,22 @@ const Login = () => {
                   required
                   {...register("password", { required: true })}
                 />
-                {errors.password && <span className="text-error">This field is required</span>}
+                {errors.password && <span className="text-error">{errors.password.message}</span>}
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
                   </a>
                 </label>
+                {registerError && (<Toaster
+                position="bottom-center"
+                reverseOrder={false}
+              />)}
+              {registerSuccess && (
+                <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+              />
+              )}
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>

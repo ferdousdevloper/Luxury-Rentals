@@ -1,29 +1,50 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hook/useAuth";
+import toast, { Toaster } from 'react-hot-toast';
+import { useState } from "react";
 
 const Register = () => {
+  const { createUser } = useAuth();
 
-  const {createUser} = useAuth();
-
+  const [registerSuccess, setRegisterSuccess] = useState("");
 
   
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
-  const onSubmit = data => {
-    const {email, password} = data
-    createUser(email, password)
-    .then(result =>{
+  } = useForm();
+
+  const validatePassword = (value) => {
+    
+    // Regular expressions to check for at least one uppercase letter and at least one special character
+    const uppercaseRegex = /[A-Z]/;
+    const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+
+    if (!uppercaseRegex.test(value)) {
+      return 'Password must contain at least one uppercase letter';
+    }
+
+    if (!specialCharRegex.test(value)) {
+      return 'Password must contain at least one special character';
+    }
+
+    return true; // Password is valid
+  };
+  const onSubmit = (data) => {
+    const { email, password } = data;
+    createUser(email, password).then((result) => {
       console.log(result);
-    })
-  }
+      setRegisterSuccess('Successfully Register');
+      toast.success(registerSuccess)
+
+  });
   
+  };
 
   return (
-    <div className="md:w-4/6 mx-auto">
+    <div className="md:w-4/6 mx-auto pt-40 md:pt-20">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
@@ -45,12 +66,13 @@ const Register = () => {
                   placeholder="Full Name"
                   className="input input-bordered"
                   required
-                  
                   {...register("name", { required: true })}
                 />
-                {errors.name && <span className="text-error">This field is required</span>}
+                {errors.name && (
+                  <span className="text-error">This field is required</span>
+                )}
               </div>
-              
+
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -62,7 +84,9 @@ const Register = () => {
                   required
                   {...register("email", { required: true })}
                 />
-                {errors.email && <span className="text-error">This field is required</span>}
+                {errors.email && (
+                  <span className="text-error">This field is required</span>
+                )}
               </div>
               <div className="form-control">
                 <label className="label">
@@ -73,7 +97,6 @@ const Register = () => {
                   placeholder="Image URL"
                   className="input input-bordered"
                   {...register("image")}
-                  
                 />
               </div>
               <div className="form-control">
@@ -85,16 +108,34 @@ const Register = () => {
                   placeholder="Password"
                   className="input input-bordered"
                   required
-                  {...register("password", { required: true })}
+                  {...register('password', {
+                    required: true,
+                    minLength: 6, // Minimum length required for the password
+                    validate: validatePassword // Custom validation function
+                  })}
                 />
-                {errors.password && <span className="text-error">This field is required</span>}
+                
+                {errors.password && (
+                  <span className="text-error">{errors.password.message}</span>
+                )}
+                {registerSuccess && (
+                <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+              />
+              )}
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
               </div>
               <div className="mt-8">
-                <p>Already have an account? <Link to='/login'className="text-primary"><strong>Sign In</strong></Link> </p>
-            </div>
+                <p>
+                  Already have an account?{" "}
+                  <Link to="/login" className="text-primary">
+                    <strong>Sign In</strong>
+                  </Link>{" "}
+                </p>
+              </div>
             </form>
           </div>
         </div>
