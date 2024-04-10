@@ -1,3 +1,5 @@
+
+
 import { updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 import useAuth from "../Hook/useAuth";
@@ -40,7 +42,7 @@ const ProfileUpdateForm = () => {
 
   return (
     <div className="pt-40 md:pt-20 min-h-[calc(100vh-136px)]">
-      {/* ----------------------------------------------------------- */}
+      
       <div className="w-3/12 mx-auto">
         <h2>Update Profile</h2>
         <form onSubmit={handleSubmit} className="">

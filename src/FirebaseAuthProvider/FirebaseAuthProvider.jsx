@@ -59,16 +59,14 @@ const FirebaseAuthProvider = ({ children }) => {
   const logout =()=>{
     setUser(null)
     signOut(auth)
-  }
+  };
   // observer
   useEffect(() => {
     const unsubscribe= onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user);
-        setLoading(false);
-      }
+      setUser(user);
+      setLoading(false); // Set loading to false regardless of user existence
     });
-    return ()=> unsubscribe()
+    return ()=> unsubscribe();
   }, []);
 
   const allValues = {
@@ -79,7 +77,7 @@ const FirebaseAuthProvider = ({ children }) => {
     githubLogin,
     twitterLogin,
     logout,
-    loading,
+    loading
     
   };
   return (

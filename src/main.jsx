@@ -15,6 +15,7 @@ import ContextApiData from "./ContextApiData/ContextApiData";
 import ViewProperty from "./components/ViewProperty/ViewProperty";
 import PrivateDetails from "./PrivateRoute/PrivateDetails";
 import ProfileUpdateForm from "./PrivateRoute/ProfileUpdateForm";
+import UserProfile from "./PrivateRoute/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -49,10 +50,16 @@ const router = createBrowserRouter([
         </PrivateDetails>,
       },
       {
-        path:"/update-profile",
-        element: <PrivateDetails>
+        path:"update-profile",
+        element:<PrivateDetails>
           <ProfileUpdateForm></ProfileUpdateForm>
-        </PrivateDetails>,
+        </PrivateDetails>
+      },
+      {
+        path:"/user-profile",
+        element: <PrivateDetails>
+          <UserProfile></UserProfile>
+        </PrivateDetails>
       }
     ],
   },
