@@ -22,31 +22,33 @@ const twitterLoginProvider = new TwitterAuthProvider();
 const FirebaseAuthProvider = ({ children }) => {
     
   const [user, setUser] = useState(null);
-  console.log(user);
+  const [loading, setLoading] = useState(true)
 
   //create user
   const createUser = (email, password) => {
+    setLoading(true)
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   // sign in user
   const signInUser = (email, password) => {
+    setLoading(true)
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   // google login
   const googleLogin = () => {
-
+    setLoading(true)
     return signInWithPopup(auth, googleLoginProvider);
   };
   // github login
   const githubLogin = () => {
-
+    setLoading(true)
     return signInWithPopup(auth, githubLoginProvider);
   };
   // twitter login
   const twitterLogin = () => {
-
+    setLoading(true)
     return signInWithPopup(auth, twitterLoginProvider);
   };
 
@@ -58,11 +60,13 @@ const FirebaseAuthProvider = ({ children }) => {
   }
   // observer
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe= onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+        setLoading(false);
       }
     });
+    return ()=> unsubscribe()
   }, []);
 
   const allValues = {
@@ -73,6 +77,7 @@ const FirebaseAuthProvider = ({ children }) => {
     githubLogin,
     twitterLogin,
     logout,
+    loading,
     
   };
   return (
