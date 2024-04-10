@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hook/useAuth";
 import toast, { Toaster } from 'react-hot-toast';
@@ -6,6 +6,9 @@ import { useState } from "react";
 
 const Register = () => {
   const { createUser } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location ?.state || "/";
 
   const [registerSuccess, setRegisterSuccess] = useState("");
 
@@ -22,6 +25,10 @@ const Register = () => {
     const uppercaseRegex = /[A-Z]/;
     const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
 
+    if (value.length < 6) {
+      return 'Password must be at least 6 characters long';
+    }
+
     if (!uppercaseRegex.test(value)) {
       return 'Password must contain at least one uppercase letter';
     }
@@ -35,11 +42,15 @@ const Register = () => {
   const onSubmit = (data) => {
     const { email, password } = data;
     createUser(email, password).then((result) => {
-      console.log(result);
+      if (result.user) {
+        navigate(from);
+      }
       setRegisterSuccess('Successfully Register');
       toast.success(registerSuccess)
 
-  });
+  })
+  
+  
   
   };
 
@@ -109,8 +120,7 @@ const Register = () => {
                   className="input input-bordered"
                   required
                   {...register('password', {
-                    required: true,
-                    minLength: 6, // Minimum length required for the password
+                    required: true, 
                     validate: validatePassword // Custom validation function
                   })}
                 />

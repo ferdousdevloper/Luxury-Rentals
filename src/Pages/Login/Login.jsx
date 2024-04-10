@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hook/useAuth";
 import SocialLogin from "./SocialLogin";
@@ -10,6 +10,9 @@ const Login = () => {
   const [registerError, setRegisterError] = useState("");
   const [registerSuccess, setRegisterSuccess] = useState("");
   const { signInUser } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location ?.state || "/";
 
 
   const {
@@ -22,7 +25,9 @@ const Login = () => {
 
     signInUser(email, password)
     .then(result =>{
-      console.log(result.user);
+      if (result.user) {
+        navigate(from);
+      }
       setRegisterSuccess('Logged in successfully');
       toast.success(registerSuccess)
       

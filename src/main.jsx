@@ -13,6 +13,7 @@ import Register from "./Pages/Login/Register";
 import FirebaseAuthProvider from "./FirebaseAuthProvider/FirebaseAuthProvider";
 import ContextApiData from "./ContextApiData/ContextApiData";
 import ViewProperty from "./components/ViewProperty/ViewProperty";
+import PrivateDetails from "./PrivateRoute/PrivateDetails";
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,9 @@ const router = createBrowserRouter([
       },
       {
         path:"/property/:id",
-        element: <ViewProperty></ViewProperty>,
+        element: <PrivateDetails>
+          <ViewProperty></ViewProperty>
+        </PrivateDetails>,
       },
     ],
   },
