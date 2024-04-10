@@ -12,6 +12,7 @@ import {
 import { createContext, useEffect, useState } from "react";
 import auth from "./../Firebase/firebaseConfig";
 
+
 export const AuthContext = createContext(null);
 
 //social auth providers
@@ -22,6 +23,7 @@ const twitterLoginProvider = new TwitterAuthProvider();
 const FirebaseAuthProvider = ({ children }) => {
     
   const [user, setUser] = useState(null);
+
   const [loading, setLoading] = useState(true)
 
   //create user

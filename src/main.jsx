@@ -14,6 +14,7 @@ import FirebaseAuthProvider from "./FirebaseAuthProvider/FirebaseAuthProvider";
 import ContextApiData from "./ContextApiData/ContextApiData";
 import ViewProperty from "./components/ViewProperty/ViewProperty";
 import PrivateDetails from "./PrivateRoute/PrivateDetails";
+import ProfileUpdateForm from "./PrivateRoute/ProfileUpdateForm";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,12 @@ const router = createBrowserRouter([
           <ViewProperty></ViewProperty>
         </PrivateDetails>,
       },
+      {
+        path:"/update-profile",
+        element: <PrivateDetails>
+          <ProfileUpdateForm></ProfileUpdateForm>
+        </PrivateDetails>,
+      }
     ],
   },
 ]);
