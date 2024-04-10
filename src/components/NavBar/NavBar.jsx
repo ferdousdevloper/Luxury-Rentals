@@ -92,7 +92,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52 "
+              className="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52  bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md"
             >
               {navLink}
             </ul>
@@ -123,11 +123,12 @@ const NavBar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu dropdown-content mt-3 z-[1] px-2 py-10 shadow-4xl shadow  rounded-box w-52 border  bg-blue-gray-200 bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md "
               >
                 <li>
                   <p className=" btn mb-3">
-                    {user?.displayName || "user name not found"}
+                    Full Name: 
+                    <span>{user?.displayName || "user name not found"}</span>
                   </p>
                 </li>
                 <li>

@@ -12,3 +12,31 @@
 .font-barlow{
     font-family: "Barlow", sans-serif;
 }
+
+.bgEffect{
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+   
+}
+
+.bg1{
+    background-image: url('https://i.ibb.co/0CMpB4W/Exclusive-Private-Island-Oasis-min.jpg');
+    backdrop-filter: blur(10px);
+    /* Add a semi-transparent overlay */
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency as needed */
+  /* Ensure the overlay covers the entire container */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
