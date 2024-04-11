@@ -19,30 +19,7 @@ const NavBar = () => {
           HOME
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/update-profile"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
-              : "font-bold mr-3"
-          }
-        >
-          UPDATE PROFILE
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/user-profile"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
-              : "font-bold mr-3"
-          }
-        >
-          USER PROFILE
-        </NavLink>
-      </li>
+      
       <li>
         <NavLink
           to="/about"
@@ -67,6 +44,34 @@ const NavBar = () => {
           CONTACT
         </NavLink>
       </li>
+      { user &&
+        <>
+          <li>
+        <NavLink
+          to="/update-profile"
+          className={({ isActive }) =>
+            isActive
+              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
+              : "font-bold mr-3"
+          }
+        >
+          UPDATE PROFILE
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/user-profile"
+          className={({ isActive }) =>
+            isActive
+              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
+              : "font-bold mr-3"
+          }
+        >
+          USER PROFILE
+        </NavLink>
+      </li>
+        </>
+      }
     </>
   );
   return (

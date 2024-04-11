@@ -1,32 +1,49 @@
+import { Helmet } from "react-helmet-async";
 import useAuth from "../Hook/useAuth";
 
 const UserProfile = () => {
   const { user } = useAuth();
   console.log(user);
   return (
-    <div className="min-h-[calc(100vh-136px)] mb-12">
+    <div className="pt-40 md:pt-20 min-h-[calc(100vh-136px)] flex flex-col items-center justify-center mb-12">
+      <Helmet><title>LUXURY | PROFILE</title></Helmet>
       <div className="pt-40 md:pt-20  relative bg1 bgEffect">
-        {/* Glassy background */}
         <div className="absolute inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md"></div>
-        {/* Content */}
-        <div className="flex flex-col max-w-md shadow-xl rounded-3xl  p-6  dark:text-gray-800 mx-auto relative z-10 inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md">
+      </div>
+
+      <div className="md:w-3/12 w-3/4 mx-auto inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md rounded-xl">
+        <div className="py-16 px-8 ">
+          <div className="flex flex-col items-center">
           <img
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
             src={
               user?.photoURL || "https://i.ibb.co/vY5bFQR/2151033973-min.jpg"
             }
             alt=""
-            className="flex-shrink-0 object-cover h-64 rounded-full sm:h-96 dark:bg-gray-500 aspect-square"
+            className="flex-shrink-0 object-cover h-64 rounded-full  dark:bg-gray-500 aspect-square"
           />
+          </div>
+
           <div className="text-center divide-y dark:divide-gray-300 mt-4 font-bold">
-            <h2 className="text-xl font-semibold">
-              {user?.displayName || "user name not found"}
+            <h2 data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700" className="text-xl font-semibold">
+              {user?.displayName || "User Name Not Found"}
             </h2>
-            <span className="block pb-2 text-sm dark:text-gray-600">
+            <span data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="900" className="block pb-2 text-sm dark:text-gray-600">
               {user?.emailVerified}
             </span>
-            <p className="">Email: {user?.email || "Email Not Found"}</p>
-            <div className="flex justify-center pt-2 space-x-4 align-center">
-              <a
+            <p data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1100" className="">Email: {user?.email || "Email Not Found"}</p>
+            <div  className="flex justify-center pt-2 space-x-4 align-center">
+              <a data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1300"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="GitHub"
@@ -41,6 +58,9 @@ const UserProfile = () => {
                 </svg>
               </a>
               <a
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="1500"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Dribble"
@@ -55,6 +75,9 @@ const UserProfile = () => {
                 </svg>
               </a>
               <a
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="1700"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Twitter"
@@ -69,6 +92,9 @@ const UserProfile = () => {
                 </svg>
               </a>
               <a
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="1900"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Email"
@@ -84,6 +110,7 @@ const UserProfile = () => {
               </a>
             </div>
           </div>
+        
         </div>
       </div>
     </div>

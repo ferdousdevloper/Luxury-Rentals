@@ -13,7 +13,8 @@ const SingleCard = ({ card }) => {
     card;
 
   return (
-    <div className=" ">
+    <div data-aos="fade-up"
+    data-aos-duration="1000" data-aos-delay="500" className=" ">
       <Card
         shadow={false}
         className="relative grid h-[40rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
@@ -29,16 +30,23 @@ const SingleCard = ({ card }) => {
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-6 text-left">
           <Typography
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
             variant="h3"
             color="white"
             className="mb-3 font-medium text-left"
           >
             {estate_title}
           </Typography>
-          <Typography variant="h5" className="mb-2 text-gray-400">
+          <Typography data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="700" variant="h5" className="mb-2 text-gray-400">
             {segment_name}
           </Typography>
-          <div className="text-gray-400 md:flex justify-between items-center">
+          <div data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="900" className="text-gray-400 md:flex justify-between items-center">
             <p>Area: {area}</p>
             <div className="flex items-center gap-2 text-gray-400">
               <FaLocationDot className="text-red-500" />
@@ -46,7 +54,9 @@ const SingleCard = ({ card }) => {
             </div>
           </div>
 
-          <div className="flex justify-between bg-gray-100 bg-opacity-10 backdrop-filter backdrop-blur-sm md:px-6 px-5 py-4 text-gray-400 rounded-3xl">
+          <div data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="1100" className="flex justify-between bg-gray-100 bg-opacity-10 backdrop-filter backdrop-blur-sm md:px-6 px-5 py-4 text-gray-400 rounded-3xl">
             <p className=" border border-yellow-500 px-5 rounded-lg bg-yellow-500 bg-opacity-10">
               {status}
             </p>
@@ -55,7 +65,9 @@ const SingleCard = ({ card }) => {
             </p>
           </div>
           {/* Property button */}
-          <div className="mt-6">
+          <div data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-delay="1300" className="mt-6">
             <Link
                 to={`/property/${id}`}
               href="#_"

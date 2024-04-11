@@ -4,12 +4,14 @@ import Marquee from "react-fast-marquee";
 
 const Reviews = () => {
   return (
-    <div className="  md:container mx-auto mt-10">
+    <div className="  md:container mx-auto mt-10 mb-20">
       <div>
-        <h1 className="text-4xl font-bold text-center mb-10">Reviews</h1>
+        <h1 data-aos="zoom-in"
+     data-aos-duration="1000" data-aos-delay="500" className="text-4xl font-bold text-center mb-10">Reviews</h1>
       </div>
       <Marquee>
-        <div className="grid grid-cols-4 gap-8 ml-8">
+        <div data-aos="zoom-in"
+     data-aos-duration="1000" data-aos-delay="1300" className="grid grid-cols-4 gap-8 ml-8">
           {/* card 1 */}
           <div className="container border bg-neutral-200 flex flex-col max-w-sm p-6 mx-auto divide-y rounded-md dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800 ">
             <div className="flex justify-between p-4">

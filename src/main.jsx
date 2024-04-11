@@ -16,6 +16,11 @@ import ViewProperty from "./components/ViewProperty/ViewProperty";
 import PrivateDetails from "./PrivateRoute/PrivateDetails";
 import ProfileUpdateForm from "./PrivateRoute/ProfileUpdateForm";
 import UserProfile from "./PrivateRoute/UserProfile";
+import {  HelmetProvider  } from "react-helmet-async";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const router = createBrowserRouter([
   {
@@ -44,23 +49,29 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path:"/property/:id",
-        element: <PrivateDetails>
-          <ViewProperty></ViewProperty>
-        </PrivateDetails>,
+        path: "/property/:id",
+        element: (
+          <PrivateDetails>
+            <ViewProperty></ViewProperty>
+          </PrivateDetails>
+        ),
       },
       {
-        path:"update-profile",
-        element:<PrivateDetails>
-          <ProfileUpdateForm></ProfileUpdateForm>
-        </PrivateDetails>
+        path: "update-profile",
+        element: (
+          <PrivateDetails>
+            <ProfileUpdateForm></ProfileUpdateForm>
+          </PrivateDetails>
+        ),
       },
       {
-        path:"/user-profile",
-        element: <PrivateDetails>
-          <UserProfile></UserProfile>
-        </PrivateDetails>
-      }
+        path: "/user-profile",
+        element: (
+          <PrivateDetails>
+            <UserProfile></UserProfile>
+          </PrivateDetails>
+        ),
+      },
     ],
   },
 ]);
@@ -69,8 +80,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <FirebaseAuthProvider>
       <ContextApiData>
-      <RouterProvider router={router} />
-      </ContextApiData> 
+        <HelmetProvider>
+          <RouterProvider router={router} />
+        </HelmetProvider>
+      </ContextApiData>
     </FirebaseAuthProvider>
   </React.StrictMode>
 );

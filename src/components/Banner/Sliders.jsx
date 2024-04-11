@@ -28,17 +28,69 @@ const Sliders = () => {
         >
           <div className="absolute z-10  w-full h-full top-[30%] md:top-[15%] mx-auto text-center">
             <div className="md:w-1/2 mx-auto">
-            <h1 className="text-yellow-600 font-gilda text-4xl md:text-8xl font-bold">
-              Luxury Rentals
-            </h1>
-            <h1 className="mt-5 text-white text-3xl md:text-5xl font-semibold">Your luxurious home <br />is waiting for you</h1>
-            <div className="inset-0 mx-10 bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl px-8 py-2 mt-8"><p className=" text-[#C9BDAB] font-medium text-2xl ">LIVE like a king in our best houses</p></div>
-            <div></div>
-            <p className="text-white mt-5 text-xl font-semibold">We have more than 7,000 luxurious <br /> properties around to world to show you</p>
-            <div className="flex justify-center items-center gap-5">
-              <Link to='/login' className="btn mt-5 bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl text-white px-8">Explore More</Link>
-              <Link to='/register' className="btn mt-5 bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl text-white px-8">Join Now</Link>
-            </div>
+              <h1
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                className="text-yellow-600 font-gilda text-4xl md:text-8xl font-bold"
+              >
+                Luxury Rentals
+              </h1>
+              <h1
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                className="mt-5 text-white text-3xl md:text-5xl font-semibold"
+              >
+                Your luxurious home <br />
+                is waiting for you
+              </h1>
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="1000"
+                className="inset-0 mx-10 bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl px-8 py-2 mt-8"
+              >
+                <p className=" text-[#C9BDAB] font-medium text-2xl ">
+                  LIVE like a king in our best houses
+                </p>
+              </div>
+              <div></div>
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="1200"
+                className="text-white mt-5 text-xl font-semibold"
+              >
+                We have more than 7,000 luxurious <br /> properties around to
+                world to show you
+              </p>
+              <div className="flex justify-center items-center gap-5">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="1400"
+                >
+                  <Link
+                    to="/login"
+                    className="btn mt-5 bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl text-white px-8"
+                  >
+                    Explore More
+                  </Link>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="1800"
+                >
+                  <Link
+                    to="/register"
+                    className="btn mt-5 bg-gray-100 bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-xl text-white px-8"
+                  >
+                    Join Now
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           {/* slide 1 */}

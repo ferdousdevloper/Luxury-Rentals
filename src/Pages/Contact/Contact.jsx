@@ -1,32 +1,58 @@
+import { Helmet } from "react-helmet-async";
+
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
   return (
-    <div className="pt-40 md:pt-20 min-h-[100vh]">
+    
+    <div className="pt-40 md:pt-20 min-h-[100vh] mb-20">
+      <Helmet><title>LUXURY | CONTACT</title></Helmet>
       <div className="pt-40 md:pt-20  relative bg1 bgEffect">
         <div className="absolute inset-0 bg-blue-gray-200 bg-opacity-15 backdrop-filter backdrop-blur-2xl dark:bg-gray-70 dark:bg-opacity-55 dark:backdrop-blur-3xl"></div>
       </div>
       <div className=" md:mt-32 md:container md:mx-auto mx-6 ">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold font-gilda mb-7 text-white">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            className="text-4xl md:text-6xl font-bold font-gilda mb-7 text-white"
+          >
             Contact Us
           </h1>
-          <p className="leading-8 text-lg font-bold">
+          <p data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="700" className="leading-8 text-lg font-bold">
             We're always here to answer your questions. Reach out and we'll get
             back to you as soon as possible.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row bg-white lg:rounded-bl-[300px] lg:rounded-tr-[200px]">
+        <div data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="900" className="flex flex-col md:flex-row bg-white lg:rounded-bl-[300px] lg:rounded-tr-[200px]">
           <div>
-            <img src={"https://i.ibb.co/7bXMc6k/Rectangle-133.png"} alt="" className="lg:rounded-bl-[300px]" />
+            <img
+              src={"https://i.ibb.co/7bXMc6k/Rectangle-133.png"}
+              alt=""
+              className="lg:rounded-bl-[300px]"
+            />
           </div>
           <div className="mx-auto flex flex-col items-center justify-center">
-            <h1 className="text-neutral-950 text-4xl lg:text-5xl font-bold mb-8 font-gilda mt-6">
+            <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1100" className="text-neutral-950 text-4xl lg:text-5xl font-bold mb-8 font-gilda mt-6">
               Connect with us
             </h1>
             <div className="leading-8 text-lg font-bold text-center mb-16">
-              <p>Phone: +8801952821555</p>
-              <p>Email: eng.mfhossain@gmail.com</p>
-              <p>
+              <p data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1300">Phone: +8801952821555</p>
+              <p data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1500">Email: eng.mfhossain@gmail.com</p>
+              <p data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1700">
                 Address: Jalkuri, Godnail, Narayanganj -1400, Dhaka, Bangladesh
               </p>
             </div>
@@ -34,6 +60,9 @@ const Contact = () => {
             <div className="flex flex-col justify-center pt-6 lg:pt-0 mb-6">
               <div className="flex justify-center space-x-4">
                 <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1900"
                   rel="noopener noreferrer"
                   href="#"
                   title="Instagram"
@@ -49,6 +78,9 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="2100"
                   rel="noopener noreferrer"
                   href="#"
                   title="Pinterest"
@@ -64,6 +96,9 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="2300"
                   rel="noopener noreferrer"
                   href="#"
                   title="Twitter"
@@ -79,6 +114,9 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="2500"
                   rel="noopener noreferrer"
                   href="#"
                   title="Facebook"
@@ -94,6 +132,9 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="2700"
                   rel="noopener noreferrer"
                   href="#"
                   title="Gmail"
