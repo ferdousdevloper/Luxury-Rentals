@@ -7,13 +7,15 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
 
 const Register = () => {
-  const { createUser } = useAuth();
+  const { createUser, logout, updateUserProfile } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const from = location?.state || "/";
 
   const [registerSuccess, setRegisterSuccess] = useState("");
   const [showPassword, setShowPassword] = useState(true);
+
+ 
 
   const {
     register,
@@ -24,6 +26,7 @@ const Register = () => {
   const validatePassword = (value) => {
     // Regular expressions to check for at least one uppercase letter and at least one special character
     const uppercaseRegex = /[A-Z]/;
+    const lowercaseRegex = /[a-z]/;
     const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
 
     if (value.length < 6) {
@@ -33,6 +36,9 @@ const Register = () => {
     if (!uppercaseRegex.test(value)) {
       return "Password must contain at least one uppercase letter";
     }
+    if (!lowercaseRegex.test(value)) {
+      return "Password must contain at least one lowercase letter";
+    }
 
     if (!specialCharRegex.test(value)) {
       return "Password must contain at least one special character";
@@ -41,15 +47,20 @@ const Register = () => {
     return true; // Password is valid
   };
   const onSubmit = (data) => {
-    const { email, password } = data;
+    const { email, password, image, name } = data;
     createUser(email, password).then((result) => {
       if (result.user) {
         navigate(from);
       }
+      updateUserProfile(name, image).then(()=>{ navigate("/")})
       setRegisterSuccess("Successfully Register");
       toast.success(registerSuccess);
+      return logout()
     });
+    
+    
   };
+  
 
   return (
     <div className="md:w-4/6 mx-auto pt-40 md:pt-20">

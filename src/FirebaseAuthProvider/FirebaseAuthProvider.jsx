@@ -7,6 +7,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
+  updateProfile,
   signOut,
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
@@ -53,6 +54,16 @@ const FirebaseAuthProvider = ({ children }) => {
     setLoading(true)
     return signInWithPopup(auth, twitterLoginProvider);
   };
+ // update user profile
+ const updateUserProfile = (name, image) => {
+  return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: image
+    })
+    
+}
+    
+  
 
 
   //logout
@@ -77,7 +88,8 @@ const FirebaseAuthProvider = ({ children }) => {
     githubLogin,
     twitterLogin,
     logout,
-    loading
+    loading,
+    updateUserProfile,
     
   };
   return (

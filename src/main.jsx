@@ -17,9 +17,10 @@ import PrivateDetails from "./PrivateRoute/PrivateDetails";
 import ProfileUpdateForm from "./PrivateRoute/ProfileUpdateForm";
 import UserProfile from "./PrivateRoute/UserProfile";
 import {  HelmetProvider  } from "react-helmet-async";
+import 'tippy.js/dist/tippy.css';
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css";
+
 AOS.init();
 
 const router = createBrowserRouter([

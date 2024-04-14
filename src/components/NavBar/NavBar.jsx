@@ -2,9 +2,14 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/Logo.png";
 import useAuth from "../../Hook/useAuth";
 
+
+
 const NavBar = () => {
   const { logout, user } = useAuth();
   console.log(user);
+
+  
+
   const navLink = (
     <>
       <li>
@@ -115,14 +120,15 @@ const NavBar = () => {
         <div className="navbar-end z-[99]">
           {/*user singed in information */}
           {user ? (
-            <div className="dropdown dropdown-end ">
+            <div className="dropdown dropdown-end" >
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
+                <div className="w-10 rounded-full ">
                   <img
                     src={
                       user?.photoURL ||
                       "https://i.ibb.co/vY5bFQR/2151033973-min.jpg"
                     }
+                    
                   />
                 </div>
               </label>
