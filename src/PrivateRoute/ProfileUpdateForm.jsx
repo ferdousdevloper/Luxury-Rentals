@@ -43,7 +43,7 @@ const ProfileUpdateForm = () => {
 
       <div className="md:w-3/12 w-3/4 mx-auto inset-0 bg-blue-gray-200 bg-opacity-25 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md rounded-xl">
         <form onSubmit={handleSubmit} className="py-16 px-8 ">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <img
             data-aos="fade-up"
             data-aos-duration="1000"

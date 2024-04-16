@@ -2,13 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/Logo.png";
 import useAuth from "../../Hook/useAuth";
 
-
-
 const NavBar = () => {
   const { logout, user } = useAuth();
   console.log(user);
-
-  
 
   const navLink = (
     <>
@@ -24,7 +20,7 @@ const NavBar = () => {
           HOME
         </NavLink>
       </li>
-      
+
       <li>
         <NavLink
           to="/about"
@@ -49,34 +45,34 @@ const NavBar = () => {
           CONTACT
         </NavLink>
       </li>
-      { user &&
+      {user && (
         <>
           <li>
-        <NavLink
-          to="/update-profile"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
-              : "font-bold mr-3"
-          }
-        >
-          UPDATE PROFILE
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/user-profile"
-          className={({ isActive }) =>
-            isActive
-              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
-              : "font-bold mr-3"
-          }
-        >
-          USER PROFILE
-        </NavLink>
-      </li>
+            <NavLink
+              to="/update-profile"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
+                  : "font-bold mr-3"
+              }
+            >
+              UPDATE PROFILE
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/user-profile"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
+                  : "font-bold mr-3"
+              }
+            >
+              USER PROFILE
+            </NavLink>
+          </li>
         </>
-      }
+      )}
     </>
   );
   return (
@@ -107,7 +103,10 @@ const NavBar = () => {
               {navLink}
             </ul>
           </div>
-          <Link to='/' className="flex flex-col md:flex-row justify-center text-center md:justify-start md:text-left items-center md:gap-6">
+          <Link
+            to="/"
+            className="flex flex-col md:flex-row justify-center text-center md:justify-start md:text-left items-center md:gap-6"
+          >
             <img className="max-w-20" src={logo} alt="" />
             <h2 className="font-gilda text-2xl tracking-[6px] font-semibold text-yellow-600">
               Luxury Rentals
@@ -117,10 +116,15 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
+
         <div className="navbar-end z-[99]">
+          <span className="md:mr-6 hidden md:block">{user?.email || "email not found"}</span>
           {/*user singed in information */}
           {user ? (
-            <div className="dropdown dropdown-end" >
+            <div
+              className="dropdown dropdown-end tooltip tooltip-left"
+              data-tip={user.displayName}
+            >
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full ">
                   <img
@@ -128,22 +132,33 @@ const NavBar = () => {
                       user?.photoURL ||
                       "https://i.ibb.co/vY5bFQR/2151033973-min.jpg"
                     }
-                    
                   />
                 </div>
               </label>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content mt-3 z-[1] px-2 py-10 shadow-4xl shadow  rounded-box w-52 border  bg-blue-gray-200 bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md "
+                className="menu dropdown-content mt-3 z-[1] px-2 py-10 shadow-4xl shadow  rounded-box md:w-64 border  bg-blue-gray-200 bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md "
               >
+                <img
+                  src={
+                    user?.photoURL ||
+                    "https://i.ibb.co/vY5bFQR/2151033973-min.jpg"
+                  }
+                  alt=""
+                  className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square mb-6"
+                />
                 <li>
                   <p className=" btn mb-3">
-                    Full Name: 
                     <span>{user?.displayName || "user name not found"}</span>
                   </p>
                 </li>
                 <li>
-                  <button onClick={logout} className="btn btn-sm btn-error">
+                  <span className="btn mb-3">
+                    {user?.email || "email not found"}
+                  </span>
+                </li>
+                <li>
+                  <button onClick={logout} className="btn btn-sm btn-error text-white">
                     Logout
                   </button>
                 </li>

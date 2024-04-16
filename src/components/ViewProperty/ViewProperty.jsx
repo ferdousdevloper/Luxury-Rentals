@@ -28,7 +28,7 @@ const ViewProperty = () => {
   }, [data, id]);
 
   return (
-    <div className=" pt-24 container mx-auto mb-20">
+    <div className=" pt-24  md:container md:mx-auto mx-5 mb-20">
       <Helmet><title>LUXURY | PROPERTIES</title></Helmet>
       <div className="mt-20 p-4 shadow-md dark:bg-gray-50 dark:text-gray-800 border-green-300 border-t-[10px] border-b-[10px] md:rounded-bl-[150px] md:rounded-tr-[150px] rounded-bl-[50px] rounded-tr-[50px]">
         <div className="space-y-4 flex flex-col md:flex-row gap-10 ">

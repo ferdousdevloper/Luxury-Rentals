@@ -3,6 +3,7 @@ import {useNavigate, useLocation} from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import toast  from "react-hot-toast";
 
 const SocialLogin = () => {
   const { googleLogin, githubLogin, twitterLogin } = useAuth();
@@ -15,6 +16,7 @@ const SocialLogin = () => {
     socialProvider().then((result) => {
       if (result.user) {
         navigate(from);
+        toast.success("Logged in successfully");
       }
     });
   };

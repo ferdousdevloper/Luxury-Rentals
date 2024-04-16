@@ -1,7 +1,7 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hook/useAuth";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
@@ -12,7 +12,7 @@ const Register = () => {
   const location = useLocation();
   const from = location?.state || "/";
 
-  const [registerSuccess, setRegisterSuccess] = useState("");
+  
   const [showPassword, setShowPassword] = useState(true);
 
  
@@ -52,10 +52,13 @@ const Register = () => {
       if (result.user) {
         navigate(from);
       }
+      
+      toast.success("Successfully Register");
       updateUserProfile(name, image).then(()=>{ navigate("/")})
-      setRegisterSuccess("Successfully Register");
-      toast.success(registerSuccess);
-      return logout()
+      
+      
+      logout()
+      
     });
     
     
@@ -176,9 +179,7 @@ const Register = () => {
                 {errors.password && (
                   <span className="text-error">{errors.password.message}</span>
                 )}
-                {registerSuccess && (
-                  <Toaster position="bottom-center" reverseOrder={false} />
-                )}
+                
               </div>
               <div
               data-aos="fade-up"
