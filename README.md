@@ -2,7 +2,7 @@
 
 Live site:
 
-- [Luxury Rentals](https://assignment-9-d175c.web.app/)
+ [Luxury Rentals](https://assignment-9-d175c.web.app/)
 
 Resources:
 
@@ -19,3 +19,15 @@ Resources:
 - [React Hook form](https://react-hook-form.com/)
 - [Animate CSS](https://animate.style/)
 - [AOS Package](https://michalsnik.github.io/aos/)
+
+Features and characteristics of my Luxury Rentals website:
+
+- Extensive Property Listings: Browse a vast collection of luxury properties available for rent, including apartments, villas, penthouses, and more.
+
+- Dedicated Agent Profiles: Meet our team of experienced agents who specialize in luxury rentals. Learn about their expertise, view their contact information, and connect with them directly.
+
+- Interactive Property Viewing: Explore properties in detail with our immersive "View Property" feature, offering high-resolution images, 3D virtual tours, and floor plans for a comprehensive viewing experience.
+
+- Customer Reviews and Testimonials: Gain insights from our satisfied clients through genuine reviews and testimonials. Hear about their experiences renting luxury properties through our platform.
+
+- Comprehensive Services: Access a range of services tailored to meet your needs, including property management, concierge services, and relocation assistance, ensuring a seamless and stress-free rental experience.
