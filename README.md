@@ -17,12 +17,15 @@
 - [React-Hot-Toast](https://react-hot-toast.com/)
 - [React-Spinner](https://www.npmjs.com/package/react-spinners)
 - [React-Icons](https://react-icons.github.io/react-icons/)
+- [React Fast Marquee](www.react-fast-marquee.com)
+- [React Helmet](https://www.npmjs.com/package/react-helmet)
+
+**Challenges Requirements packages:**
+
 - [Swiper-slider](https://swiperjs.com/)
 - [React Hook form](https://react-hook-form.com/)
 - [Animate CSS](https://animate.style/)
 - [AOS Package](https://michalsnik.github.io/aos/)
-- [React Fast Marquee](www.react-fast-marquee.com)
-- [React Helmet](https://www.npmjs.com/package/react-helmet)
 
 ______________________________________________________________________________________
 
