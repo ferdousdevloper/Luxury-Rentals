@@ -7,6 +7,7 @@ Live site:
 Resources:
 
 - [React Router Dom](https://reactrouter.com/en/main)
+- [Firebase](https://firebase.google.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Buttons](https://devdojo.com/tailwindcss/buttons)
 - [Mamba UI - Components](https://mambaui.com/components)
@@ -19,6 +20,10 @@ Resources:
 - [React Hook form](https://react-hook-form.com/)
 - [Animate CSS](https://animate.style/)
 - [AOS Package](https://michalsnik.github.io/aos/)
+- [React Fast Marquee](www.react-fast-marquee.com)
+- [React Helmet](https://www.npmjs.com/package/react-helmet)
+
+______________________________________________________________________________________
 
 Features and characteristics of my Luxury Rentals website:
 
