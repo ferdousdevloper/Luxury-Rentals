@@ -25,7 +25,7 @@ __Live site:__
 
 ______________________________________________________________________________________
 
-**Features and characteristics of my Luxury Rentals website:**
+## Features and characteristics of my Luxury Rentals website:
 
 - Extensive Property Listings: Browse a vast collection of luxury properties available for rent, including apartments, villas, penthouses, and more.
 
