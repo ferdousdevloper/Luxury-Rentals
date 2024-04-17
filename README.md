@@ -1,11 +1,10 @@
 ![Luxury Rentals Logo](/public/Logo.png)
 
-<span style="font-size: 36px; background-color: #ca8a04; padding: 8px;">Luxury Rentals</span>
+# Luxury Rentals
 
-## Live site:
+## Live site: [Luxury Rentals](https://assignment-9-d175c.web.app/)
 
- [Luxury Rentals](https://assignment-9-d175c.web.app/)
-
+ 
 **Resources:**
 
 - [React Router Dom](https://reactrouter.com/en/main)
