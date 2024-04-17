@@ -2,7 +2,7 @@
 
 <span style="font-size: 36px; background-color: #ca8a04; padding: 8px;">Luxury Rentals</span>
 
-__Live site:__
+## Live site:
 
  [Luxury Rentals](https://assignment-9-d175c.web.app/)
 
