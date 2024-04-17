@@ -1,5 +1,6 @@
 
 # $\colorbox{orange}{{\color{white}{Luxury  Rentals}}}$
+![Luxury Rentals Logo](/public/Logo.png)
 
 __Live site:__
 
