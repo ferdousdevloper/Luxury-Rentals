@@ -1,5 +1,5 @@
 
-# $\textcolor{yellow}{Luxury / Rentals }$
+# $\colorbox{orange}{{\color{white}{Luxury  Rentals}}}$
 
 __Live site:__
 
