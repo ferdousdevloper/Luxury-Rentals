@@ -46,7 +46,18 @@ const NavBar = () => {
         </NavLink>
       </li>
       {user && (
-        <>
+        <><li>
+        <NavLink
+          to="/agents"
+          className={({ isActive }) =>
+            isActive
+              ? "text-yellow-500 font-bold border border-yellow-500 mr-3 scale-105"
+              : "font-bold mr-3"
+          }
+        >
+          AGENTS
+        </NavLink>
+      </li>
           <li>
             <NavLink
               to="/update-profile"
@@ -98,7 +109,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52  bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md"
+              className="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52  bg-opacity-45 backdrop-filter backdrop-blur-md dark:bg-gray-50 dark:bg-opacity-25 dark:backdrop-blur-md "
             >
               {navLink}
             </ul>
@@ -114,11 +125,11 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLink}</ul>
+          <ul className="menu menu-horizontal px-1 text-white">{navLink}</ul>
         </div>
 
         <div className="navbar-end z-[99]">
-          <span className="md:mr-6 hidden md:block">{user?.email || "email not found"}</span>
+          <span className="md:mr-6 hidden md:block">{user?.email}</span>
           {/*user singed in information */}
           {user ? (
             <div

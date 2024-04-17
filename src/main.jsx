@@ -20,6 +20,7 @@ import {  HelmetProvider  } from "react-helmet-async";
 import 'tippy.js/dist/tippy.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Agents from "./PrivateRoute/Agents";
 
 AOS.init();
 
@@ -54,6 +55,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateDetails>
             <ViewProperty></ViewProperty>
+          </PrivateDetails>
+        ),
+      },
+      {
+        path: "/agents",
+        element: (
+          <PrivateDetails>
+            <Agents></Agents>
           </PrivateDetails>
         ),
       },

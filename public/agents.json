@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "designation": "Senior Agent",
+    "image": "https://i.ibb.co/6v22fmW/1-min.jpg",
+    "short_bio": "Experienced in luxury properties. Dedicated to finding your dream home.",
+    "mail": "john.doe@luxury-rentals.com",
+    "phone_number": "+1234567890"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "designation": "Property Consultant",
+    "image": "https://i.ibb.co/GnJq6zD/5-min.jpg",
+    "short_bio": "Specializing in commercial real estate. Let's turn your visions into reality.",
+    "mail": "jane.smith@luxury-rentals.com",
+    "phone_number": "+1987654321"
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "designation": "Investment Advisor",
+    "image": "https://i.ibb.co/6nVJkF7/4-min.jpg",
+    "short_bio": "Expert in investment properties. Maximizing returns for your portfolio.",
+    "mail": "michael.johnson@luxury-rentals.com",
+    "phone_number": "+1122334455"
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "designation": "Residential Specialist",
+    "image": "https://i.ibb.co/bFxncqp/2-min.jpg",
+    "short_bio": "Passionate about helping families find their perfect home. Let's start your journey today.",
+    "mail": "emily.brown@luxury-rentals.com",
+    "phone_number": "+1555666777"
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "designation": "Luxury Home Expert",
+    "image": "https://i.ibb.co/k595SBX/6-min.jpg",
+    "short_bio": "Exceeding expectations in luxury real estate. Your ultimate satisfaction is my goal.",
+    "mail": "david.wilson@luxury-rentals.com",
+    "phone_number": "+1444333222"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Lee",
+    "designation": "Commercial Broker",
+    "image": "https://i.ibb.co/9yL5C89/3-min.jpg",
+    "short_bio": "Navigating the complexities of commercial real estate with finesse. Let's achieve success together.",
+    "mail": "sarah.lee@luxury-rentals.com",
+    "phone_number": "+1777888999"
+  }
+]
