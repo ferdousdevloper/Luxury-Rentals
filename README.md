@@ -1,10 +1,10 @@
 # Luxury Rentals
 
-Live site:
+__Live site:__
 
  [Luxury Rentals](https://assignment-9-d175c.web.app/)
 
-Resources:
+**Resources:**
 
 - [React Router Dom](https://reactrouter.com/en/main)
 - [Firebase](https://firebase.google.com/)
@@ -25,7 +25,7 @@ Resources:
 
 ______________________________________________________________________________________
 
-Features and characteristics of my Luxury Rentals website:
+**Features and characteristics of my Luxury Rentals website:**
 
 - Extensive Property Listings: Browse a vast collection of luxury properties available for rent, including apartments, villas, penthouses, and more.
 
