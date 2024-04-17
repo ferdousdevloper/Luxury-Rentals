@@ -21,9 +21,6 @@ const Footer = () => {
             <Link to="/contact">Contact</Link>
           </div>
           <div className="flex flex-col mt-6 leading-10  text-center">
-            <h2>
-              <strong>Services</strong>
-            </h2>
             <Link to='/register'>Register</Link>
             <Link to="/login">Login</Link>
             <Link to="/agents" >Agents</Link>
