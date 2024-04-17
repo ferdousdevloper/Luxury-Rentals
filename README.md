@@ -1,4 +1,5 @@
-# Luxury Rentals `#ca8a04`
+
+# $\textcolor{yellow}{Luxury / Rentals }$
 
 __Live site:__
 
