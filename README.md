@@ -1,6 +1,6 @@
-
-# $\colorbox{orange}{{\color{white}{Luxury  Rentals}}}$
 ![Luxury Rentals Logo](/public/Logo.png)
+
+<span style="font-size: 36px; background-color: #ca8a04; padding: 8px;">Luxury Rentals</span>
 
 __Live site:__
 
